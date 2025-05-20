@@ -2,6 +2,8 @@
 ---
 **Симона Мицева 233174**
 ---
+
 **Control Flow Graph**
+
 
 ![Control Flow Graph](cfg.png)
