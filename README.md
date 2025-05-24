@@ -15,19 +15,19 @@
 **Тест случаи според Every Statement критериумот**
 ---
 За да се постигне овој критериум потребни се најмаку 5 тест случаи.
-1.checkCart(null, "1234567890123456");
+**1.**checkCart(null, "1234567890123456");
 Се праќа празна листа и се очекува да фрли усклучок RuntimeException("allItems list can't be null!")
-2.List<Item> items = List.of(new Item(null, 1, 100, 0.0));
+**2.**List<Item> items = List.of(new Item(null, 1, 100, 0.0));
   checkCart(items, "1234567890123456");
   Овде се праќа null за име и се очекува да фрли исклучок RuntimeException("Invalid item!")
-3.List<Item> items = List.of(new Item("item1", 11, 350, 0.1));
+**3.**List<Item> items = List.of(new Item("item1", 11, 350, 0.1));
   checkCart(items, "1234567890123456");
   Артиклот има попуст, цена и голема количина.Со овој тест случај се покрива поголем дел од кодот.
-4.List<Item> items = List.of(new Item("item1", 2, 100, 0.0));
+**4.**List<Item> items = List.of(new Item("item1", 2, 100, 0.0));
   checkCart(items, "1234abcd5678efgh");
   Артиклот има цена и количина.Со ово тест случај се покрива дел од кодот каде се прсметува сумата без 
   попуст.Исто така после тоа фрла исклучок за RuntimeException("Invalid character in card number!")
-5.List<Item> items = List.of(new Item("item1", 2, 100, 0.0));
+**5.**List<Item> items = List.of(new Item("item1", 2, 100, 0.0));
   checkCart(items, "1234");
   Со овој тест случај се очекува да фрли исклучок RuntimeException("Invalid card number!")
 
